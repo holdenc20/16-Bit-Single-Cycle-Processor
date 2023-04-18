@@ -1,0 +1,235 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 11 17:00:19 2023
+# Process ID: 12872
+# Current directory: C:/Users/holden.ca/Desktop/lab7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13812 C:\Users\holden.ca\Desktop\lab7\lab7.xpr
+# Log file: C:/Users/holden.ca/Desktop/lab7/vivado.log
+# Journal file: C:/Users/holden.ca/Desktop/lab7\vivado.jou
+# Running On: WFXA4BB6DB8E837, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 16881 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/holden.ca/Desktop/lab7/lab7.xpr
+update_compile_order -fileset sources_1
+import_files -norecurse {C:/Users/holden.ca/Downloads/mapper-1.sv C:/Users/holden.ca/Downloads/alu_instrmem_top-1.sv C:/Users/holden.ca/Downloads/debounce-2.sv C:/Users/holden.ca/Downloads/adaptor_display-7.sv}
+close [ open C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv w ]
+add_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv
+remove_files  C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv
+export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/adaptor_display-7.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/adaptor_display-7.sv
+export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/mapper-1.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/holden.ca/Desktop/Downloads/mapper-1.sv
+export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv
+export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/alu_instrmem_top-1.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/holden.ca/Desktop/Downloads/alu_instrmem_top-1.sv
+export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/lab_7_constraint.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/holden.ca/Desktop/Downloads/lab_7_constraint.xdc
+reset_run synth_1
+reset_run instruction_memory_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse C:/Users/holden.ca/Downloads/lab_7_constraint.xdc
+import_files -fileset constrs_1 C:/Users/holden.ca/Downloads/lab_7_constraint.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+catch { [ delete_ip_run [get_ips -all instruction_memory] ] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory]
+generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci]
+catch { config_ip_cache -export [get_ips -all instruction_memory] }
+export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet
+reset_run instruction_memory_synth_1
+launch_runs instruction_memory_synth_1 -jobs 8
+wait_on_run instruction_memory_synth_1
+export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

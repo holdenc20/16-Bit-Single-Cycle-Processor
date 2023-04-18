@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Apr 11 17:07:33 2023
+# Process ID: 8904
+# Current directory: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1
+# Command line: vivado.exe -log alu_instrmem_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source alu_instrmem_top.tcl -notrace
+# Log file: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.vdi
+# Journal file: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1\vivado.jou
+# Running On: WFXA4BB6DB8E837, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 16881 MB
+#-----------------------------------------------------------
+source alu_instrmem_top.tcl -notrace

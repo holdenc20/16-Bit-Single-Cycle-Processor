@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Mar 28 15:38:54 2023
+# Process ID: 9824
+# Current directory: C:/Users/holden.ca.NUNET/lab7/lab7.runs/data_mem_synth_1
+# Command line: vivado.exe -log data_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source data_mem.tcl
+# Log file: C:/Users/holden.ca.NUNET/lab7/lab7.runs/data_mem_synth_1/data_mem.vds
+# Journal file: C:/Users/holden.ca.NUNET/lab7/lab7.runs/data_mem_synth_1\vivado.jou
+# Running On: WFXA4BB6DBB7C7D, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 16881 MB
+#-----------------------------------------------------------
+source data_mem.tcl -notrace

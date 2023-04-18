@@ -1,0 +1,2342 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 12872
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Apr 11 17:00:33 EDT 2023
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	holden.ca
+User home directory: C:/Users/holden.ca
+User working directory: C:/Users/holden.ca/Desktop/lab7
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2022.1
+RDI_DATADIR: C:/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/holden.ca/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/holden.ca/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/holden.ca/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/holden.ca/Desktop/lab7/vivado.log
+Vivado journal file: 	C:/Users/holden.ca/Desktop/lab7/vivado.jou
+Engine tmp dir: 	C:/Users/holden.ca/Desktop/lab7/.Xil/Vivado-12872-WFXA4BB6DB8E837
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,301 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 66 MB (+66783kb) [00:00:06]
+// [Engine Memory]: 1,301 MB (+1212553kb) [00:00:06]
+// Opening Vivado Project: C:\Users\holden.ca\Desktop\lab7\lab7.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/holden.ca/Desktop/lab7/lab7.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+38490kb) [00:00:10]
+// WARNING: HEventQueue.dispatchEvent() is taking  1564 ms.
+// Tcl Message: open_project C:/Users/holden.ca/Desktop/lab7/lab7.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,356 MB. GUI used memory: 63 MB. Current time: 4/11/23, 5:00:35 PM EDT
+// [Engine Memory]: 1,367 MB (+1162kb) [00:00:12]
+// Project name: lab7; location: C:/Users/holden.ca/Desktop/lab7; part: xc7z020clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1576.445 ; gain = 0.000 
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 119 MB (+8426kb) [00:00:15]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv)]", 6); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+String[] filenames31467 = {"C:/Users/holden.ca/Downloads/adaptor_display-7.sv", "C:/Users/holden.ca/Downloads/alu_instrmem_top-1.sv", "C:/Users/holden.ca/Downloads/debounce-2.sv", "C:/Users/holden.ca/Downloads/mapper-1.sv"};
+setFileChooser(filenames31467);
+selectCheckBox(PAResourceQtoS.SrcChooserPanel_MAKE_LOCAL_COPY_OF_THESE_FILES_INTO, "Copy sources into project", true); // g: TRUE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {C:/Users/holden.ca/Downloads/mapper-1.sv C:/Users/holden.ca/Downloads/alu_instrmem_top-1.sv C:/Users/holden.ca/Downloads/debounce-2.sv C:/Users/holden.ca/Downloads/adaptor_display-7.sv} 
+// [GUI Memory]: 138 MB (+13302kb) [00:00:41]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ao
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ar
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source File Properties..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 22); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 22); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 23); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 26); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 27); // D
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a
+dismissDialog("Unable to Open File"); // ag
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 31); // D
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // D
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ar
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // cm
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "adaptor_display-7"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, adaptor_display-7.sv]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, adaptor_display-7.sv]", 2, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1117 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("adaptor_display-7.sv", 23, 151); // be
+typeControlKey((HResource) null, "adaptor_display-7.sv", 'v'); // be
+// [Engine Memory]: 1,452 MB (+17104kb) [00:02:09]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false, false, false, false, false, true); // D - Double Click
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a
+dismissDialog("Unable to Open File"); // ag
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, adaptor_display-7.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: remove_files  C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv 
+selectButton(RDIResourceCommand.RDICommands_DELETE, (String) null); // D
+selectButton(RDIResourceCommand.RDICommands_DELETE, (String) null); // D
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab_7_constraint.xdc]", 31, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adaptor_display (adaptor_display-7.sv)]", 21, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adaptor_display (adaptor_display-7.sv)]", 21, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ar
+// WARNING: HEventQueue.dispatchEvent() is taking  1068 ms.
+dismissDialog("Opening Editor"); // bA
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Adaptor_display (adaptor_display-7.sv)]", 21, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/adaptor_display-7.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/adaptor_display-7.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, mapper-1.sv]", 4, false, false, false, false, true, false); // D - Popup Trigger
+// [GUI Memory]: 145 MB (+19kb) [00:03:14]
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/mapper-1.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/holden.ca/Desktop/Downloads/mapper-1.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, debounce-2.sv]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, alu_instrmem_top-1.sv]", 2, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/alu_instrmem_top-1.sv] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  C:/Users/holden.ca/Desktop/Downloads/alu_instrmem_top-1.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, lab_7_constraint.xdc]", 24, false, false, false, false, true, false); // D - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files C:/Users/holden.ca/Desktop/Downloads/lab_7_constraint.xdc] -no_script -reset -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset constrs_1 C:/Users/holden.ca/Desktop/Downloads/lab_7_constraint.xdc 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 17); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 17); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: LOAD_FEATURE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... 
+// Tcl Message: [Tue Apr 11 17:04:06 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 17:04:06 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bA
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1067 ms.
+dismissDialog("Opening Editor"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 1,454 MB. GUI used memory: 79 MB. Current time: 4/11/23, 5:04:14 PM EDT
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv)]", 1); // D
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 17); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Coefficient Files]", 24); // D
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 144 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+// Elapsed time: 16 seconds
+selectButton(RDIResource.TclConsoleView_CLEAR_ALL_OUTPUT_IN_TCL_CONSOLE, "Tcl Console_remove"); // D
+selectButton("OptionPane.button", "Yes"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 17:07:21 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 189, 62); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 624, 59); // dT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), display : Adaptor_display (adaptor_display-7.sv)]", 15, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), display : Adaptor_display (adaptor_display-7.sv), third : hex_decoder (adaptor_display-7.sv)]", 21, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1053 ms.
+dismissDialog("Opening Editor"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), display : Adaptor_display (adaptor_display-7.sv), second : hex_decoder (adaptor_display-7.sv)]", 20, false); // D
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 39, 28); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 287, 24); // dT
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 10, false, false, false, false, false, true); // ah - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 12, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 12, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Write Bitstream, [Vivado 12-1345] Error(s) found during DRC. Bitgen not run.. ]", 12, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 11, false); // ah
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bA
+// HMemoryUtils.trashcanNow. Engine heap size: 1,484 MB. GUI used memory: 95 MB. Current time: 4/11/23, 5:09:04 PM EDT
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2022.1   **** Build date : Apr 18 2022 at 16:02:36     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2022.1.0   ****** Build date   : Apr 12 2022-15:12:08     **** Build number : 2022.1.1649790728       ** Copyright 2017-2023 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1581.012 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  5019 ms.
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 3694.555 ; gain = 2113.543 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,560 MB. GUI used memory: 94 MB. Current time: 4/11/23, 5:09:21 PM EDT
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// [Engine Memory]: 3,560 MB (+2135014kb) [00:08:58]
+// Elapsed time: 13 seconds
+dismissDialog("Auto Connect"); // bA
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (1) ; Not programmed", 3, "xc7z020_1 (1)", 0, true); // t - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (1) ; Not programmed", 3, "xc7z020_1 (1)", 0, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_REFRESH_DEVICE, "Refresh Device"); // ar
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (1) ; Not programmed", 3, "xc7z020_1 (1)", 0, true, false, false, false, true, false); // t - Popup Trigger - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z020_1 (1) ; Not programmed", 3, "xc7z020_1 (1)", 0, true); // t - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 17:09:35 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+// TclEventType: RUN_STATUS_CHANGE
+selectTab((HResource) null, (HResource) null, "Serial I/O Links", 2); // aL
+selectTab((HResource) null, (HResource) null, "Serial I/O Scans", 3); // aL
+selectTab((HResource) null, (HResource) null, "Serial I/O Links", 2); // aL
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 405, 79); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 739, 73); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 633, 75); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 410, 76); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 397, 11); // dT
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+// Elapsed time: 20 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 196, 304); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 826, 289); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 828, 288); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 690, 299); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 492, 273); // T
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+// Elapsed time: 15 seconds
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+// HMemoryUtils.trashcanNow. Engine heap size: 3,622 MB. GUI used memory: 100 MB. Current time: 4/11/23, 5:11:34 PM EDT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 155 MB (+2990kb) [00:11:14]
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci' is already up-to-date 
+// Tcl Message: [Tue Apr 11 17:11:37 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+// HMemoryUtils.trashcanNow. Engine heap size: 3,650 MB. GUI used memory: 103 MB. Current time: 4/11/23, 5:11:54 PM EDT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 17:11:54 2023] Launched synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 17:11:54 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 29, false); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+selectButton("NEXT", "Next >"); // JButton
+// 'g' command handler elapsed time: 6 seconds
+dismissDialog("Add Sources"); // c
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // i
+// TclEventType: RUN_STEP_COMPLETED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 32 seconds
+setFileChooser("C:/Users/holden.ca/Downloads/lab_7_constraint.xdc");
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 37 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse C:/Users/holden.ca/Downloads/lab_7_constraint.xdc 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 C:/Users/holden.ca/Downloads/lab_7_constraint.xdc 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 29); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), display : Adaptor_display (adaptor_display-7.sv)]", 15); // D
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 17:14:21 2023] Launched synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 17:14:21 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. ]", 2, true); // ah - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. ]", 2); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false, false, false, false, false, true); // ah - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 164 MB (+1390kb) [00:14:43]
+// Elapsed time: 49 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ao
+// TclEventType: RUN_STEP_COMPLETED
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ar
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aj
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 85 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "lab72"); // aa
+selectButton("CANCEL", "Cancel"); // JButton
+// 'g' command handler elapsed time: 87 seconds
+dismissDialog("New Project"); // f
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// [GUI Memory]: 173 MB (+587kb) [00:16:59]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 852 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Coefficient Files, output.coe]", 26, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Coefficient Files, output.coe]", 26, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1047 ms.
+dismissDialog("Opening Editor"); // bA
+selectCodeEditor("output.coe", 247, 25); // be
+selectCodeEditor("output.coe", 247, 25, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 290, 21); // be
+selectCodeEditor("output.coe", 290, 21, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 316, 24); // be
+selectCodeEditor("output.coe", 316, 24, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 351, 23); // be
+selectCodeEditor("output.coe", 351, 23, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 392, 27); // be
+selectCodeEditor("output.coe", 401, 25); // be
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 132 seconds
+selectCodeEditor("output.coe", 269, 87); // be
+selectCodeEditor("output.coe", 406, 31); // be
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [GUI Memory]: 182 MB (+136kb) [00:34:25]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 17:34:57 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 72 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 3,802 MB (+66138kb) [00:35:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,997 MB. GUI used memory: 118 MB. Current time: 4/11/23, 5:36:14 PM EDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,670 MB. GUI used memory: 117 MB. Current time: 4/11/23, 5:36:22 PM EDT
+// [Engine Memory]: 4,670 MB (+710827kb) [00:35:59]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 193 MB (+2194kb) [00:36:01]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1019 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.038 . Memory (MB): peak = 4152.906 ; gain = 0.000 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2022.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 4867.195 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 4867.195 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4867.195 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 70 instances were transformed.   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 64 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 5037.281 ; gain = 1256.930 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 204 MB (+769kb) [00:36:02]
+// WARNING: HEventQueue.dispatchEvent() is taking  1173 ms.
+// Device view-level: 0.0
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 216 MB (+1955kb) [00:36:04]
+// 'eq' command handler elapsed time: 17 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Open Implemented Design"); // bA
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Methodology Violations"); // aV
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false, false, false, false, false, true); // ah - Double Click
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. ]", 2); // ah
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. ]", 2); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/adaptor_display-7.sv'.. , [Project 1-19] Could not find the file 'C:/Users/holden.ca/Desktop/Downloads/debounce-2.sv'.. ]", 3, false); // ah
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aL
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aL
+selectTab((HResource) null, (HResource) null, "DRC", 5); // aL
+selectTab((HResource) null, (HResource) null, "Methodology", 6); // aL
+selectTab((HResource) null, (HResource) null, "Power", 7); // aL
+// [Engine Memory]: 4,904 MB (+1492kb) [00:36:32]
+// [GUI Memory]: 233 MB (+6521kb) [00:36:35]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 34, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_EDIT, (String) null); // a
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CURRENT_LOCATION_CANNOT_BE_OVER_WRITTEN, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CLOSE, "Close"); // a
+selectButton("OptionPane.button", "Save"); // JButton
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CURRENT_LOCATION_CANNOT_BE_OVER_WRITTEN, "Save"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source Node Properties..."); // ar
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Port config", 1); // cW
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_EDIT, (String) null); // a
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CURRENT_LOCATION_CANNOT_BE_OVER_WRITTEN, "Save"); // a
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CURRENT_LOCATION_CANNOT_BE_OVER_WRITTEN, "Save"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_VALIDATE, "Validate"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CURRENT_LOCATION_CANNOT_BE_OVER_WRITTEN, "Save"); // a
+// [GUI Memory]: 245 MB (+1123kb) [00:38:18]
+selectButton(PAResourceTtoZ.XPG_CoeFileDialog_CLOSE, "Close"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 17:38:44 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 17:38:53 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 17:38:53 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,923 MB. GUI used memory: 177 MB. Current time: 4/11/23, 5:39:14 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 4,965 MB. GUI used memory: 177 MB. Current time: 4/11/23, 5:39:29 PM EDT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 170 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 253 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 279, 23); // be
+selectCodeEditor("output.coe", 279, 23, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 325, 26); // be
+selectCodeEditor("output.coe", 325, 26, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 351, 27); // be
+selectCodeEditor("output.coe", 351, 27, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 367, 23); // be
+selectCodeEditor("output.coe", 381, 23); // be
+selectCodeEditor("output.coe", 384, 23, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 404, 23); // be
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // n
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("CANCEL", "Cancel"); // JButton
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceQtoS.SrcMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+dismissFileChooser();
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP instruction_memory, cache-ID = e7f18d392b48cd94; cache size = 5.844 MB. 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: catch { [ delete_ip_run [get_ips -all instruction_memory] ] } 
+// Tcl Message: INFO: [Project 1-386] Moving file 'C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci' from fileset 'instruction_memory' to fileset 'sources_1'. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci' 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci' is already up-to-date 
+// Tcl Message: [Tue Apr 11 17:47:49 2023] Launched synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 17:47:49 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 151 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+// [GUI Memory]: 258 MB (+616kb) [00:49:58]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // n
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // n
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+selectCodeEditor("output.coe", 220, 122); // be
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// Elapsed time: 15 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "nzimm[5:0] ; [H] 00 ;  ; Input ; hw_vio_1", 15, "Input", 3, true); // g - Node
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 410 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), sixteenbit_alu : alu (alu.sv)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), sixteenbit_alu : alu (alu.sv)]", 10, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+dismissDialog("Opening Editor"); // bA
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 250 seconds
+selectCodeEditor("output.coe", 162, 30); // be
+selectCodeEditor("output.coe", 162, 30, false, false, false, false, true); // be - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("output.coe", 221, 29); // be
+selectCodeEditor("output.coe", 221, 29, false, false, false, false, true); // be - Double Click
+typeControlKey((HResource) null, "output.coe", 'v'); // be
+typeControlKey(null, null, 'z');
+selectCodeEditor("output.coe", 263, 27); // be
+selectCodeEditor("output.coe", 263, 27, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 292, 27); // be
+selectCodeEditor("output.coe", 292, 27, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 361, 29); // be
+selectCodeEditor("output.coe", 361, 29, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 381, 28); // be
+selectCodeEditor("output.coe", 381, 28, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 390, 26); // be
+selectCodeEditor("output.coe", 390, 26, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 425, 23); // be
+selectCodeEditor("output.coe", 425, 23, false, false, false, false, true); // be - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("output.coe", 229, 100); // be
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, true, false); // D - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 18:03:47 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 18:03:56 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 18:03:56 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 179 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 43 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "alu_input2_instr_src[15:0] ; [H] 0000 ;  ; Input ; hw_vio_1", 13, (String) null, 2, true); // g - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 4,979 MB. GUI used memory: 188 MB. Current time: 4/11/23, 6:09:29 PM EDT
+// Elapsed time: 108 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "regfile_WriteData[15:0] ; [H] 0006 ;  ; Input ; hw_vio_1", 20, "[H] 0006", 1, true); // g - Node
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 175 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_instrmem_top-1.sv", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// Elapsed time: 94 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 432, 29); // be
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 548 seconds
+selectCodeEditor("output.coe", 284, 26); // be
+selectCodeEditor("output.coe", 284, 26, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 316, 26); // be
+selectCodeEditor("output.coe", 316, 26, false, false, false, false, true); // be - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 44 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 18:24:32 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 18:24:41 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 18:24:41 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 62 seconds
+selectCodeEditor("output.coe", 223, 158); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 112 seconds
+selectCodeEditor("output.coe", 244, 67); // be
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a
+dismissDialog("Feedback Request"); // aH
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "alu_ovf_flag ; [B] 0 ;  ; Input ; hw_vio_1", 9, "[B] 0", 1, false); // g
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 165 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 174, 25); // be
+selectCodeEditor("output.coe", 174, 25, false, false, false, false, true); // be - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 272 MB (+972kb) [01:32:05]
+// Elapsed time: 79 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 18:32:47 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// 'cW' command handler elapsed time: 7 seconds
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 18:33:47 2023] Launched synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 18:33:47 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 141 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "instruction[15:0] ; [H] 8881 ;  ; Input ; hw_vio_1", 18, "[H] 8881", 1, true); // g - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "pc[7:0] ; [H] 00 ;  ; Input ; hw_vio_1", 19, "[H] 00", 1, true); // g - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "instruction[15:0] ; [H] 8881 ;  ; Input ; hw_vio_1", 18, "[H] 8881", 1, true); // g - Node
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,979 MB. GUI used memory: 201 MB. Current time: 4/11/23, 6:39:30 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 318 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 53, 31); // be
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 18:42:11 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 18:42:18 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 18:42:18 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 192 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 698 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 61, 27); // be
+selectCodeEditor("output.coe", 61, 27, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 121, 28); // be
+selectCodeEditor("output.coe", 121, 28, false, false, false, false, true); // be - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 208 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 19:01:17 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+// [GUI Memory]: 288 MB (+2629kb) [02:00:57]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 19:01:25 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 19:01:25 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 185 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectCodeEditor("output.coe", 237, 160); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 4,979 MB. GUI used memory: 216 MB. Current time: 4/11/23, 7:09:30 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 493 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 214, 30); // be
+selectCodeEditor("output.coe", 214, 30, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 249, 30); // be
+selectCodeEditor("output.coe", 249, 30, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 285, 21); // be
+selectCodeEditor("output.coe", 285, 21, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 327, 24); // be
+selectCodeEditor("output.coe", 327, 24, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 380, 29); // be
+selectCodeEditor("output.coe", 380, 29, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 424, 29); // be
+selectCodeEditor("output.coe", 424, 29, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 455, 28); // be
+selectCodeEditor("output.coe", 455, 28, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 485, 24); // be
+selectCodeEditor("output.coe", 485, 24, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 532, 23); // be
+selectCodeEditor("output.coe", 532, 23, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 555, 22); // be
+selectCodeEditor("output.coe", 555, 22, false, false, false, false, true); // be - Double Click
+selectCodeEditor("output.coe", 592, 22); // be
+selectCodeEditor("output.coe", 592, 22, false, false, false, false, true); // be - Double Click
+// Elapsed time: 471 seconds
+selectCodeEditor("output.coe", 499, 182); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// Elapsed time: 78 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst : instruction_decoder (instruction_decoder.sv)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst : instruction_decoder (instruction_decoder.sv)]", 6, false, false, false, false, false, true); // D - Double Click
+// WARNING: HEventQueue.dispatchEvent() is taking  1055 ms.
+dismissDialog("Opening Editor"); // bA
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("instruction_decoder.sv", 178, 197); // be
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_instrmem_top-1.sv", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instruction_decoder.sv", 3); // m
+selectCodeEditor("instruction_decoder.sv", 244, 300); // be
+selectCodeEditor("instruction_decoder.sv", 239, 312); // be
+selectCodeEditor("instruction_decoder.sv", 249, 189); // be
+// Elapsed time: 93 seconds
+selectCodeEditor("instruction_decoder.sv", 104, 231); // be
+selectCodeEditor("instruction_decoder.sv", 203, 319); // be
+// Elapsed time: 23 seconds
+selectCodeEditor("instruction_decoder.sv", 349, 320); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 19:26:06 2023] Launched synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 19:26:06 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// HOptionPane Error: 'The file 'C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit' does not exist. Please specify a valid file name. (Invalid File Name)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bC
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 86 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 193 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 24, 26); // be
+selectCodeEditor("output.coe", 24, 26, false, false, false, false, true); // be - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 73 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 19:33:33 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 11 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 19:33:50 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 19:33:50 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 170 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 29 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "alu_ovf_flag ; [B] 0 ;  ; Input ; hw_vio_1", 9, "hw_vio_1", 4, false); // g
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "alu_output[15:0] ; [H] 0003 ;  ; Input ; hw_vio_1", 8, "alu_output[15:0]", 0, true); // g - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 4,979 MB. GUI used memory: 227 MB. Current time: 4/11/23, 7:39:30 PM EDT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 458 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "instruction_decoder.sv", 3); // m
+selectCodeEditor("instruction_decoder.sv", 308, 162); // be
+selectCodeEditor("instruction_decoder.sv", 198, 143); // be
+selectCodeEditor("instruction_decoder.sv", 198, 143, false, false, false, false, true); // be - Double Click
+selectCodeEditor("instruction_decoder.sv", 493, 140); // be
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectCodeEditor("output.coe", 210, 27); // be
+selectCodeEditor("output.coe", 210, 27, false, false, false, false, true); // be - Double Click
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 72 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // n - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, alu_instrmem_top (alu_instrmem_top-1.sv), inst_mem : instruction_memory (instruction_memory.xci)]", 3, false); // D
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "RST & Initialization", 2); // cW
+selectButton(PAResourceTtoZ.XPG_CoeFileWidgdet_BROWSE, (String) null); // a
+setFileChooser("C:/Users/holden.ca/Downloads/output.coe");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.coefficient_file {C:/Users/holden.ca/Downloads/output.coe}] [get_ips instruction_memory] 
+// Tcl Message: INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/holden.ca/Downloads/output.coe' provided. It will be converted relative to IP Instance files '../../../../../../Downloads/output.coe' 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'instruction_memory'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'instruction_memory'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all instruction_memory] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run instruction_memory_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs instruction_memory_synth_1 -jobs 8 
+// Tcl Message: [Tue Apr 11 19:47:24 2023] Launched instruction_memory_synth_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log 
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: export_simulation -of_objects [get_files C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/ip/instruction_memory/instruction_memory.xci] -directory C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files -ipstatic_source_dir C:/Users/holden.ca/Desktop/lab7/lab7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/modelsim} {questa=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/questa} {riviera=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/riviera} {activehdl=C:/Users/holden.ca/Desktop/lab7/lab7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet 
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: RUN_STATUS_CHANGE
+selectButton("OptionPane.button", "OK"); // JButton
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1161] Replacing file C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp with file C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp 
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // cZ
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Apr 11 19:47:30 2023] Launched instruction_memory_synth_1, synth_1... Run output will be captured here: instruction_memory_synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/instruction_memory_synth_1/runme.log synth_1: C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/runme.log [Tue Apr 11 19:47:31 2023] Launched impl_1... Run output will be captured here: C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 134 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "output.coe", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu_instrmem_top-1.sv", 1); // m
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // n
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z020_1"); // ar
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+dismissDialog("Program Device"); // bC
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.ltx} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/holden.ca/Desktop/lab7/lab7.runs/impl_1/alu_instrmem_top.bit} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bA
+// TclEventType: HW_SERVER_UPDATE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// [GUI Memory]: 306 MB (+3184kb) [02:50:31]
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 199 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "instruction[15:0] ; [H] 15FD ;  ; Input ; hw_vio_1", 18, "instruction[15:0]", 0, true); // g - Node

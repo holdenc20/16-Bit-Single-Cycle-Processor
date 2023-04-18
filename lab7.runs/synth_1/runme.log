@@ -1,0 +1,398 @@
+
+*** Running vivado
+    with args -log alu_instrmem_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_instrmem_top.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source alu_instrmem_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/holden.ca/Desktop/lab7/lab7.srcs/utils_1/imports/synth_1/alu_instrmem_top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top alu_instrmem_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9124
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1637.473 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alu_instrmem_top' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/debounce-2.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/debounce-2.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'instruction_memory' [C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/.Xil/Vivado-15520-WFXA4BB6DB8E837/realtime/instruction_memory_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_memory' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/.Xil/Vivado-15520-WFXA4BB6DB8E837/realtime/instruction_memory_stub.v:5]
+WARNING: [Synth 8-689] width (9) of port connection 'a' does not match port width (8) of module 'instruction_memory' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/program_counter.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/program_counter.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'mapper' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:40]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:49]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:55]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:47]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:65]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:38]
+INFO: [Synth 8-6155] done synthesizing module 'mapper' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_decoder' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:39]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decoder' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:23]
+WARNING: [Synth 8-7071] port 'rs1' of module 'instruction_decoder' is unconnected for instance 'inst' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:72]
+WARNING: [Synth 8-7071] port 'rs2' of module 'instruction_decoder' is unconnected for instance 'inst' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:72]
+WARNING: [Synth 8-7071] port 'rd' of module 'instruction_decoder' is unconnected for instance 'inst' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:72]
+WARNING: [Synth 8-7023] instance 'inst' of module 'instruction_decoder' has 16 connections declared, but only 13 given [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:72]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/regfile.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/regfile.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'TwoToOneMux' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/TwoToOneMux.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'TwoToOneMux' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/TwoToOneMux.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:24]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:40]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/alu.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/.Xil/Vivado-15520-WFXA4BB6DB8E837/realtime/data_mem_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/.Xil/Vivado-15520-WFXA4BB6DB8E837/realtime/data_mem_stub.v:5]
+WARNING: [Synth 8-689] width (16) of port connection 'a' does not match port width (10) of module 'data_mem' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:97]
+WARNING: [Synth 8-689] width (3) of port connection 'out' does not match port width (16) of module 'TwoToOneMux' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:102]
+WARNING: [Synth 8-689] width (3) of port connection 'out' does not match port width (16) of module 'TwoToOneMux' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:103]
+INFO: [Synth 8-6157] synthesizing module 'Adaptor_display' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'clockDivider10KHz' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:58]
+INFO: [Synth 8-6155] done synthesizing module 'clockDivider10KHz' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'displaySelector' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:80]
+INFO: [Synth 8-6155] done synthesizing module 'displaySelector' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'activateDisplay' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:88]
+INFO: [Synth 8-226] default block is never used [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:91]
+INFO: [Synth 8-6155] done synthesizing module 'activateDisplay' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:88]
+INFO: [Synth 8-6157] synthesizing module 'hex_decoder' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:105]
+INFO: [Synth 8-226] default block is never used [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:107]
+INFO: [Synth 8-6155] done synthesizing module 'hex_decoder' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:105]
+INFO: [Synth 8-6157] synthesizing module 'bcdSelector' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:132]
+INFO: [Synth 8-226] default block is never used [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:136]
+INFO: [Synth 8-6155] done synthesizing module 'bcdSelector' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:132]
+INFO: [Synth 8-6157] synthesizing module 'bcdTo7Segment' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:151]
+INFO: [Synth 8-6155] done synthesizing module 'bcdTo7Segment' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:151]
+INFO: [Synth 8-6155] done synthesizing module 'Adaptor_display' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/adaptor_display-7.sv:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:114]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/.Xil/Vivado-15520-WFXA4BB6DB8E837/realtime/vio_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/.Xil/Vivado-15520-WFXA4BB6DB8E837/realtime/vio_0_stub.v:5]
+WARNING: [Synth 8-689] width (9) of port connection 'probe_in18' does not match port width (8) of module 'vio_0' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:134]
+INFO: [Synth 8-6155] done synthesizing module 'alu_instrmem_top' (0#1) [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:23]
+WARNING: [Synth 8-7137] Register xnew0_reg in module debounce has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/debounce-2.sv:41]
+WARNING: [Synth 8-7137] Register sig_debounced_out_reg in module debounce has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/debounce-2.sv:56]
+WARNING: [Synth 8-89] always_ff on 'opcode_reg' did not result in a flip-flop [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:41]
+WARNING: [Synth 8-87] always_comb on 'RegDst_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:41]
+WARNING: [Synth 8-87] always_comb on 'instr_i_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:42]
+WARNING: [Synth 8-87] always_comb on 'ALUSrc1_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:43]
+WARNING: [Synth 8-87] always_comb on 'ALUSrc2_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:44]
+WARNING: [Synth 8-87] always_comb on 'ALUOp_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:45]
+WARNING: [Synth 8-87] always_comb on 'MemToReg_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:46]
+WARNING: [Synth 8-87] always_comb on 'Regsrc_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:47]
+WARNING: [Synth 8-87] always_comb on 'MemWrite_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:48]
+WARNING: [Synth 8-87] always_comb on 'RegWrite_reg' did not result in combinational logic [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:49]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux3'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:101]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:114]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'reg1'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:77]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux1'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:82]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'data'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:95]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux2'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:83]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'sixteenbit_alu'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:85]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'prog_count'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:68]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'display'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:105]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:72]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'nolabel_line70'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:70]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux4'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:102]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mux5'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:103]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_mem'. This will prevent further optimization [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:66]
+WARNING: [Synth 8-3848] Net right_pb_rst_general in module/entity alu_instrmem_top does not have driver. [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/alu_instrmem_top-1.sv:64]
+WARNING: [Synth 8-7129] Port curr_disp[1] in module bcdTo7Segment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port curr_disp[0] in module bcdTo7Segment is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs1[2] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs1[1] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs1[0] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs2[2] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs2[1] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs2[0] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[2] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[1] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[0] in module instruction_decoder is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1656.555 ; gain = 19.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1656.555 ; gain = 19.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1656.555 ; gain = 19.082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1656.555 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/holden.ca/Desktop/lab7/lab7.gen/sources_1/ip/data_mem/data_mem/data_mem_in_context.xdc] for cell 'data'
+Finished Parsing XDC File [c:/Users/holden.ca/Desktop/lab7/lab7.gen/sources_1/ip/data_mem/data_mem/data_mem_in_context.xdc] for cell 'data'
+Parsing XDC File [c:/Users/holden.ca/Desktop/lab7/lab7.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio'
+Finished Parsing XDC File [c:/Users/holden.ca/Desktop/lab7/lab7.gen/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio'
+Parsing XDC File [c:/Users/holden.ca/Desktop/lab7/lab7.gen/sources_1/ip/instruction_memory/instruction_memory/instruction_memory_in_context.xdc] for cell 'inst_mem'
+Finished Parsing XDC File [c:/Users/holden.ca/Desktop/lab7/lab7.gen/sources_1/ip/instruction_memory/instruction_memory/instruction_memory_in_context.xdc] for cell 'inst_mem'
+Parsing XDC File [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/constrs_1/imports/Downloads/lab_7_constraint.xdc]
+Finished Parsing XDC File [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/constrs_1/imports/Downloads/lab_7_constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/constrs_1/imports/Downloads/lab_7_constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alu_instrmem_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alu_instrmem_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.395 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1720.395 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'vio' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for data. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for vio. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst_mem. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'opcode_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/imports/Downloads/mapper-1.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:49]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc1_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:43]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc2_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:44]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:48]
+WARNING: [Synth 8-327] inferring latch for variable 'MemToReg_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:46]
+WARNING: [Synth 8-327] inferring latch for variable 'Regsrc_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:47]
+WARNING: [Synth 8-327] inferring latch for variable 'instr_i_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/holden.ca/Desktop/lab7/lab7.srcs/sources_1/new/instruction_decoder.sv:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input    9 Bit        Muxes := 3     
+	   6 Input    9 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
+	   6 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 5     
+	   6 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 11    
+	   9 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 9     
+	  11 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port rs1[2] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs1[1] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs1[0] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs2[2] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs2[1] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rs2[0] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[2] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[1] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rd[0] in module instruction_decoder is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (RegDst_reg) is unused and will be removed from module instruction_decoder.
+WARNING: [Synth 8-3332] Sequential element (ALUSrc1_reg) is unused and will be removed from module instruction_decoder.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |instruction_memory |         1|
+|2     |data_mem           |         1|
+|3     |vio_0              |         1|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |data_mem           |     1|
+|2     |instruction_memory |     1|
+|3     |vio                |     1|
+|4     |BUFG               |     1|
+|5     |CARRY4             |    22|
+|6     |LUT1               |     2|
+|7     |LUT2               |    31|
+|8     |LUT3               |    89|
+|9     |LUT4               |    72|
+|10    |LUT5               |    60|
+|11    |LUT6               |   187|
+|12    |MUXF7              |    32|
+|13    |FDCE               |   137|
+|14    |FDRE               |    92|
+|15    |LD                 |    23|
+|16    |IBUF               |     3|
+|17    |OBUF               |    13|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 1725.176 ; gain = 19.082
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1725.176 ; gain = 87.703
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1725.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1725.176 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  LD => LDCE: 23 instances
+
+Synth Design complete, checksum: 4227c89b
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1725.176 ; gain = 87.703
+INFO: [Common 17-1381] The checkpoint 'C:/Users/holden.ca/Desktop/lab7/lab7.runs/synth_1/alu_instrmem_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_instrmem_top_utilization_synth.rpt -pb alu_instrmem_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 11 19:48:51 2023...
